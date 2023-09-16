@@ -8,7 +8,7 @@ function Navbar() {
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/gamergories">Home</Link>
         </li>
         <li>
           <Link to="/game-selection">Game Select</Link>
