@@ -79,7 +79,7 @@ function DotaPage() {
             width="180"
             height="100"
             id={index+1}
-            className=""
+            className="hidden"
           />
         ))}
 
