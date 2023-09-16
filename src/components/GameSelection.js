@@ -13,9 +13,9 @@ function GameSelection() {
       <Link to="/pokemon">
         <img src={pokemonLogo} alt="Pokemon" className="game-logo" />
       </Link>
-      <Link to="/dota">
+      {/* <Link to="/dota">
         <img src={dotaLogo} alt="Dota" className="game-logo" />
-      </Link>
+      </Link> */}
       <Link to="/league-of-legends">
         <img src={leagueLogo} alt="League of Legends" className="game-logo" />
       </Link>
