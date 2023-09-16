@@ -1,0 +1,33 @@
+/* src/components/HomePage.css */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    
+  }
+
+  .logo {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    /* You can add more styles like margins, padding, etc., as needed */
+  }
+  
+  
+  .start-button,
+  .how-to-play-button {
+    background-color: #fff;
+    color: #B19EB2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .start-button:hover,
+  .how-to-play-button:hover {
+    background-color: #ade9f7;
+  }
+  
