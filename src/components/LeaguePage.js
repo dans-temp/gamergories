@@ -13,6 +13,7 @@ let display_text = '-';
 let count = 0;
 for (const champion of leagueData)
 {
+
     champion.id = count;
     count ++;
     let champion_name = champion.name;
@@ -21,6 +22,7 @@ for (const champion of leagueData)
     icon_urls.push(image_url+champion_name.toLowerCase().replace(/['.\s]/g, '')+'.png')
 }
 
+console.log(icon_urls[0])
 function LeaguePage() {
 
   const [inputText, setInputText] = useState('');
