@@ -13,6 +13,9 @@ function Navbar() {
         <li>
           <Link to="/game-selection">Game Select</Link>
         </li>
+        <li>
+          <Link to="/how-to-play">Instructions</Link>
+        </li>
       </ul>
     </nav>
   );

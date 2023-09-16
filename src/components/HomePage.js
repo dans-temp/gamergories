@@ -6,8 +6,8 @@ import './HomePage.css';
 
 function HomePage() {
   const textStyle = {
-    fontSize: '48px', // Adjust the font size as needed
-    marginBottom: '15px', // Add spacing between image and text
+    fontSize: '48px', 
+    marginBottom: '15px', 
   };
 
 
@@ -19,7 +19,9 @@ function HomePage() {
         <Link to="/game-selection">
           <button className="start-button">Start Game</button>
         </Link>
+        <Link to="/how-to-play">
           <button className="how-to-play-button">How to Play</button>
+        </Link>
         </div>
     </div>
   );

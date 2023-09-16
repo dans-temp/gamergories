@@ -68,7 +68,7 @@ function PokemonPage() {
         <div className="scrollable">
             {imagePaths.map((imagePath, index) => (
 
-                <img className="icon-pic hidden"
+                <img className="icon-pic "
                     key={index}
                     id= {index + 1}
                     src={images(imagePath)}

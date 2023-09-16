@@ -39,3 +39,11 @@
     margin: 0 auto; /* Center the image horizontally */
     display: block; /* Make the image a block element */
   }
+
+  .top-image-dota {
+    padding-top: 10px;
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain the image's aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Make the image a block element */
+  }

@@ -7,9 +7,16 @@
   }
 
   .logo {
-    width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
-    /* You can add more styles like margins, padding, etc., as needed */
+    width: 300px; 
+    height: 300px; 
+  }
+
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    height: 100vh; /* Set the height to the full viewport height */
   }
   
   
