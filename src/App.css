@@ -8,7 +8,7 @@ html, body {
   overflow: hidden;
   height: 100%;
 }
-/* src/components/PokemonPage.css */
+
 .scrollable {
   max-height: 800px; /* Adjust the height as needed */
   padding-top: 20px;

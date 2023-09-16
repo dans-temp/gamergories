@@ -1,7 +1,7 @@
 // src/components/HomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
-import logo from '../assets/logo.png';
+import logo from '../assets/logo2.png';
 import './HomePage.css'; 
 
 function HomePage() {
@@ -13,7 +13,7 @@ function HomePage() {
 
   return (
     <div className="home-page nonscrollable">
-        <div style={textStyle}>Nerdygories</div>
+        <div style={textStyle}>GAMERGORIES</div>
         <img src={logo} alt="Logo" className="logo"/>
         <div className="button-container">
         <Link to="/game-selection">

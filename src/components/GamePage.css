@@ -1,0 +1,41 @@
+.pokemon-pic
+{
+    padding: 10px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+/* Style for the input field */
+.input-field {
+    width: 25%;
+    height: 50px;
+    padding: 10px;
+    font-size: 32px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  @media (max-width: 800px) {
+    .input-field {
+        width: 80%;
+
+      }
+  }
+  
+  /* Additional styling when the input is focused (optional) */
+  .input-field:focus {
+    border-color: #b084b3; /* Change the border color when focused */
+    box-shadow: 0 0 5px #b084b3; /* Add a subtle box shadow */
+  }
+
+  .top-image {
+    padding-top: 10px;
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain the image's aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Make the image a block element */
+  }
