@@ -4,21 +4,41 @@ import pokemonData from '../assets/pokemon-data/pokedex.json';
 import './PokemonPage.css';
 
 
-const images = require.context('../assets/pokemon-data/images', false, /\.(png|jpg|jpeg|gif)$/);
+const images = require.context('../assets/pokemon-data/thumbnails', false, /\.(png|jpg|jpeg|gif)$/);
+const guessed = [];
 
 function PokemonPage() {
   const imagePaths = images.keys();
 
-  console.log(imagePaths);
+
   const [inputText, setInputText] = useState('');
 
   const handleInputChange = (e) => {
     setInputText(e.target.value);
-    for (const pokemon of pokemonData)
-    {
-        if (e.target.value.toLowerCase()  === pokemon.name.english.toLowerCase())
-            console.log(pokemon.name.english);
-    }
+    loop1:
+        for (const pokemon of pokemonData)
+        {
+            const pokemon_name = pokemon.name.english;
+            if (e.target.value.toLowerCase()  === pokemon_name.toLowerCase())
+            {
+                for(const guessed_pokemon of guessed)
+                {
+                    console.log('heh')
+                    if(guessed_pokemon === pokemon_name)
+                    {
+                        console.log('already guessed');
+                        setInputText('')
+                        break loop1;
+                    }
+                }
+
+                console.log('guessed correctly');
+                guessed.push(pokemon_name);
+                console.log('array :',guessed)
+                document.getElementById(pokemon.id).style.display = "initial";
+                setInputText('')
+            }
+        }
     
   };
   
@@ -36,14 +56,15 @@ function PokemonPage() {
 
         <div className="scrollable">
             {imagePaths.map((imagePath, index) => (
-            <img
-                key={index}
-                id= {index + 1}
-                src={images(imagePath)}
-                alt={`Pokemon ${index + 1}`}
-                width="100"
-                height="100"
-            />
+
+                <img className="pokemon-pic hidden"
+                    key={index}
+                    id= {index + 1}
+                    src={images(imagePath)}
+                    alt={`Pokemon ${index + 1}`}
+                    width="100"
+                    height="100"
+                />
             ))}
         </div>
       </div>
