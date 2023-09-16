@@ -1,19 +1,31 @@
-/* src/components/GameSelection.css */
+
+
+/* Style the game container */
 .game-container {
-    display: flex;
-    flex-direction: column; /* Set the flex direction to column */
-    align-items: center; /* Center the items horizontally */
-  }
-  
-  .game-logo {
-    width: 200px;
-    max-height: 200px;
-    cursor: pointer;
-    margin-bottom: 10px; /* Add spacing between logos if needed */
-  }
-  
-  .game-logo:hover {
-    width: 220px;
-    max-height: 250px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Add some padding for spacing */
+}
+
+/* Style the game logo */
+.game-logo {
+  width: 200px;
+  height: auto; /* Maintain the aspect ratio */
+  cursor: pointer;
+  margin: 10px; /* Add margin for spacing */
+  transition: transform 0.2s; /* Add a smooth hover effect */
+}
+
+/* Increase the logo size on hover */
+.game-logo:hover {
+  transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+/* Style the category title */
+.category-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add more spacing below the title */
+}
