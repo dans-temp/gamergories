@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import './GamePage.css';
 import dotaData from '../assets/dota-data/heroes.json'; 
 import questionMarkImage from '../assets/question-mark.png';
@@ -7,7 +7,6 @@ import thumbsup from '../assets/thumbs-up.png';
 
 const image_url = 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/';
 const icon_urls = [];
-const guessed = [];
 let display_text = '-';
 
 
@@ -19,6 +18,16 @@ for (const hero of dotaData)
 
 function DotaPage() {
   const [inputText, setInputText] = useState('');
+
+  const [guessed, setMyArray] = useState([]);
+  useEffect(() => {
+    return () => {
+      // Clean up the array when the component unmounts
+      setMyArray([]);
+      display_text = '-';
+    };
+  }, []); // Empty dependency array ensures this effect runs only on mount and unmount
+
 
   const handleInputChange = (e) => {
     setInputText(e.target.value);

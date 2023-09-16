@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './GamePage.css';
 import leagueData from '../assets/league-data/champions.json'; 
 import questionMarkImage from '../assets/question-mark.png';
@@ -23,9 +23,17 @@ for (const champion of leagueData)
 
 function LeaguePage() {
 
-
-
   const [inputText, setInputText] = useState('');
+  const [guessed, setMyArray] = useState([]);
+
+  useEffect(() => {
+    return () => {
+      // Clean up the array when the component unmounts
+      setMyArray([]);
+      display_text = '-';
+    };
+  }, []); // Empty dependency array ensures this effect runs only on mount and unmount
+
 
   const handleInputChange = (e) => {
     setInputText(e.target.value);

@@ -1,5 +1,5 @@
 // src/components/PokemonPage.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import pokemonData from '../assets/pokemon-data/pokedex.json'; 
 import './GamePage.css';
 import questionMarkImage from '../assets/question-mark.png';
@@ -14,6 +14,16 @@ function PokemonPage() {
   const imagePaths = images.keys();
 
   const [inputText, setInputText] = useState('');
+
+  const [guessed, setMyArray] = useState([]);
+  useEffect(() => {
+    return () => {
+      // Clean up the array when the component unmounts
+      setMyArray([]);
+      display_text = '-';
+    };
+  }, []); // Empty dependency array ensures this effect runs only on mount and unmount
+
 
   const handleInputChange = (e) => {
     setInputText(e.target.value);
@@ -68,7 +78,7 @@ function PokemonPage() {
         <div className="scrollable">
             {imagePaths.map((imagePath, index) => (
 
-                <img className="icon-pic "
+                <img className="icon-pic hidden"
                     key={index}
                     id= {index + 1}
                     src={images(imagePath)}
