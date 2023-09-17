@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gamergories/static/css/main.16154b50.css",
-    "main.js": "/gamergories/static/js/main.9aaea71b.js",
+    "main.css": "/gamergories/static/css/main.48359d30.css",
+    "main.js": "/gamergories/static/js/main.d746621e.js",
     "static/js/787.7c61bf55.chunk.js": "/gamergories/static/js/787.7c61bf55.chunk.js",
     "static/media/league-logo.png": "/gamergories/static/media/league-logo.dfbe52592e203edac5e4.png",
     "static/media/logo.png": "/gamergories/static/media/logo.4b08e698f03cb51b85a7.png",
@@ -162,12 +162,12 @@
     "static/media/074.png": "/gamergories/static/media/074.79ea9e8a74bab8edfce1.png",
     "static/media/dota-logo.png": "/gamergories/static/media/dota-logo.f994e86c128644fb9628.png",
     "index.html": "/gamergories/index.html",
-    "main.16154b50.css.map": "/gamergories/static/css/main.16154b50.css.map",
-    "main.9aaea71b.js.map": "/gamergories/static/js/main.9aaea71b.js.map",
+    "main.48359d30.css.map": "/gamergories/static/css/main.48359d30.css.map",
+    "main.d746621e.js.map": "/gamergories/static/js/main.d746621e.js.map",
     "787.7c61bf55.chunk.js.map": "/gamergories/static/js/787.7c61bf55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16154b50.css",
-    "static/js/main.9aaea71b.js"
+    "static/css/main.48359d30.css",
+    "static/js/main.d746621e.js"
   ]
 }
