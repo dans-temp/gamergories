@@ -87,6 +87,7 @@ function PokemonPage() {
                     height="100"
                 />
             ))}
+            <div className="white-space"></div>
         </div>
       </div>
   );

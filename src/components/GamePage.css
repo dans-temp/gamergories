@@ -19,10 +19,18 @@
     outline: none;
   }
 
+  
+  .white-space {
+    height:100px;
+  }
+
+
   @media (max-width: 800px) {
     .input-field {
         width: 80%;
-
+      }
+      .white-space {
+        height:200px;
       }
   }
   

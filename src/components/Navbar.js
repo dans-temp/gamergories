@@ -11,10 +11,10 @@ function Navbar() {
           <Link to="/gamergories">Home</Link>
         </li>
         <li>
-          <Link to="/game-selection">Game Select</Link>
+          <Link to="/how-to-play">Instructions</Link>
         </li>
         <li>
-          <Link to="/how-to-play">Instructions</Link>
+          <Link to="/game-selection">Game</Link>
         </li>
       </ul>
     </nav>

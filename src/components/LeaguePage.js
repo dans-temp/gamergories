@@ -99,7 +99,7 @@ function LeaguePage() {
             className="hidden"
           />
         ))}
-
+        <div className="white-space"></div>
         </div>
       </div>
   );
