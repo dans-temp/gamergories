@@ -11,7 +11,7 @@ function Navbar() {
           <Link to="/gamergories">Home</Link>
         </li>
         <li>
-          <Link to="/how-to-play">Instructions</Link>
+          <Link to="/how-to-play">Help</Link>
         </li>
         <li>
           <Link to="/game-selection">Game</Link>

@@ -5,15 +5,9 @@ import logo from '../assets/logo2.png';
 import './HomePage.css'; 
 
 function HomePage() {
-  const textStyle = {
-    fontSize: '48px', 
-    marginBottom: '15px', 
-  };
-
-
   return (
     <div className="home-page nonscrollable">
-        <div style={textStyle}>GAMERGORIES</div>
+        <div className="main-title" >GAMERGORIES</div>
         <img src={logo} alt="Logo" className="logo"/>
         <div className="button-container">
         <Link to="/game-selection">
