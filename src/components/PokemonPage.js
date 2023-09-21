@@ -54,6 +54,11 @@ function PokemonPage() {
                     {
                         display_text = pokemon_name + ' is correct!'
                         document.getElementById(pokemon.id).style.display = "initial";
+                        if(pokemon_name === 'Nidoran')
+                        {
+                            guessed.push(pokemon_name);
+                            document.getElementById(32).style.display = "initial";
+                        }
                         document.getElementById('top-image').src = big_images(imagePaths[pokemon.id-1]);
                         setInputText('')
                     }
